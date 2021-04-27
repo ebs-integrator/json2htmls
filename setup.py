@@ -4,16 +4,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="json2html",
+    name="json2htmls",
     version="0.0.1",
     author="Dorin Musteata",
     author_email="dorin.musteata@ebs-integrator.com",
-    description="json2html is a package that converts any json to html tables.",
+    description="json2htmls is a package that converts any json to html tables.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ebs-integrator/json2html",
+    url="https://github.com/ebs-integrator/json2htmls",
     project_urls={
-        "Bug Tracker": "https://github.com/ebs-integrator/json2html/issues",
+        "Bug Tracker": "https://github.com/ebs-integrator/json2htmls/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
