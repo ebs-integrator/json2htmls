@@ -1,14 +1,14 @@
-# json2html
+# json2htmls
 
-**json2html** is a package that converts json (dict) to html tables.
+**json2htmls** is a package that converts json (dict) to html tables.
 
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install json2html.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install json2htmls.
 
 ```bash
-pip install json2html
+pip install json2htmls
 ```
 
 ## Available methods 
@@ -24,7 +24,7 @@ json_arrays_destroy - removes arrays from source
 Example
 
 ```python
-from json2html import json_to_html
+from json2htmls import json_to_html
 import json
 with open('tests/sample.json') as json_file: # warning currently keys with values are nu supported , e.g. "key": ["1", "2"]
     data = json.load(json_file)
