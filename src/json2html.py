@@ -175,12 +175,15 @@ def normalize(sources):
 
         # If element is list inspect each key value and clear useless keys
         if isinstance(sources[element], list):
+            evaluting = []
+
             for index, elements in enumerate(sources[element]):
-                if isinstance(elements, int):
+                if isinstance(elements, int) or isinstance(elements, str):
                     sources[element][index] = str(elements)
+                    evaluting.append(str(elements))
 
                 # Ignored else for clear viewing
-                if not isinstance(elements, int):
+                if type(elements) not in [int, str]:
                     normalize(elements)
 
     return sources
